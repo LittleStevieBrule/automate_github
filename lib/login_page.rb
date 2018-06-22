@@ -1,7 +1,7 @@
 class LoginPage
   include PageObject
 
-  def initialize(url = false)
+  def initialize(url = true)
     super(Config.instance.driver, url)
   end
 
