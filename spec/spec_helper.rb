@@ -24,7 +24,6 @@ end
 
 Selenium::WebDriver::Firefox.driver_path = 'drivers/firefox/geckodriver'
 driver = Selenium::WebDriver.for :firefox
-driver.get 'https://www.github.com/'
 Config.instance.driver = driver
 
 at_exit { driver.quit }
